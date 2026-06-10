@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intel Sustainability Timeline</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@700;900&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet" />
+
+</head>
+<link rel="stylesheet" href="styles.css" />
+<body>
+
+<!-- Matrix rain canvas -->
+<canvas id="matrix-canvas"></canvas>
+
+<!-- ── HERO ── -->
+<section class="hero">
+
+  <!-- Floating code particles -->
+  <div class="code-float" style="top:20%;left:5%;animation-delay:0s">  const sustainability = true;</div>
+  <div class="code-float" style="top:60%;left:8%;animation-delay:3s">  GHG.reduce(0.40);</div>
+  <div class="code-float" style="top:35%;right:6%;animation-delay:1.5s">  water.restore(100%);</div>
+  <div class="code-float" style="top:70%;right:10%;animation-delay:5s">  energy.source = 'renewable';</div>
+  <div class="code-float" style="top:50%;left:50%;animation-delay:7s">  if(planet.ok) build();</div>
+
+  <p class="terminal-tag">intel.sustainability.timeline — initialized</p>
+
+  <div class="hero-logo-wrap">
+    <span class="intel-badge">intel</span>
+    <span class="hero-eyebrow">// sustainability_report.js</span>
+  </div>
+
+  <h1>
+    <span class="title-word" style="animation-delay:0.3s">Building</span>
+    <span class="title-word" style="animation-delay:0.5s"> a </span>
+    <span class="title-word accent-green" style="animation-delay:0.7s">Greener</span><br>
+    <span class="title-word" style="animation-delay:0.9s">Future</span>
+    <span class="title-word" style="animation-delay:1.1s"> in </span>
+    <span class="title-word accent" style="animation-delay:1.3s">Code</span>
+  </h1>
+  <p class="hero-sub">From net-zero pledges to renewable campuses — a decade of Intel's environmental milestones.</p>
+  <a href="#timeline" class="hero-cta">&#x276F;&nbsp; Initialize Timeline</a>
+</section>
+
+<!-- ── ABOUT INTEL ── -->
+<section class="about-section">
+  <div class="about-text">
+    <span class="eyebrow">// about_intel.init()</span>
+    <h2>What is Intel?</h2>
+    <p>Founded in 1968, Intel Corporation is one of the world's largest and most influential semiconductor companies. Headquartered in Santa Clara, California, Intel designs and manufactures the microprocessors and chips that power billions of computers, servers, smartphones, and connected devices globally.</p>
+    <p>From the iconic Intel Core processors inside laptops to the Xeon chips running cloud data centers — Intel's silicon is the engine behind modern computing. They also develop AI accelerators, networking hardware, and cutting-edge fabrication technology at their own chip factories called "fabs."</p>
+    <div class="about-chips">
+      <span class="chip">#microprocessors</span>
+      <span class="chip">#semiconductors</span>
+      <span class="chip">#AI_hardware</span>
+      <span class="chip">#data_centers</span>
+      <span class="chip">#chip_manufacturing</span>
+    </div>
+    <a href="https://www.intel.com" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:0.5rem;margin-top:1.5rem;padding:0.6rem 1.4rem;border:1px solid rgba(0,194,224,0.4);border-radius:50px;color:var(--cyan);font-family:'Fira Code',monospace;font-size:0.75rem;text-decoration:none;letter-spacing:0.06em;transition:background 0.3s,box-shadow 0.3s,transform 0.25s;" onmouseover="this.style.background='rgba(0,194,224,0.1)';this.style.boxShadow='0 0 20px rgba(0,194,224,0.2)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='transparent';this.style.boxShadow='none';this.style.transform='translateY(0)'">&#x276F; Visit intel.com &#8599;</a>
+  </div>
+  <div class="about-stats">
+    <div class="about-stat-card">
+      <div class="big">1968</div>
+      <div class="lbl">Year Intel was founded</div>
+    </div>
+    <div class="about-stat-card">
+      <div class="big">120K+</div>
+      <div class="lbl">Employees worldwide</div>
+    </div>
+    <div class="about-stat-card">
+      <div class="big">$54B</div>
+      <div class="lbl">Annual revenue (2023)</div>
+    </div>
+    <div class="about-stat-card">
+      <div class="big">60+</div>
+      <div class="lbl">Countries with Intel presence</div>
+    </div>
+  </div>
+</section>
+
+<div class="about-divider"></div>
+
+<!-- ── SECTION HEADER ── -->
+<div class="section-head" id="timeline">
+  <span class="eyebrow">// milestone_data.push()</span>
+  <h2>Sustainability Timeline</h2>
+</div>
+
+<!-- ── TIMELINE ── -->
+<div class="tl-outer">
+  <div class="tl-track">
+
+    <!-- 2008 -->
+    <div class="ms">
+      <div class="ms-img-wrap">
+        <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=560&auto=format&fit=crop&q=70" alt="Green forest representing environmental goals" loading="lazy" />
+        <span class="ms-year-badge">2008</span>
+      </div>
+      <div class="ms-dot-row"><div class="ms-dot"></div></div>
+      <div class="ms-card">
+        <h3>First Carbon-Neutral Goal Set</h3>
+        <p class="base">Intel sets its first target to reduce absolute greenhouse gas emissions across all global operations.</p>
+        <p class="extra">// First in semiconductor industry to formalize carbon targets before regulatory requirements — a voluntary commitment that reshaped internal engineering priorities.</p>
+        <span class="tag">#climate</span>
+      </div>
+    </div>
+
+    <!-- 2012 -->
+    <div class="ms">
+      <div class="ms-img-wrap">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=560&auto=format&fit=crop&q=70" alt="River and water conservation landscape" loading="lazy" />
+        <span class="ms-year-badge">2012</span>
+      </div>
+      <div class="ms-dot-row"><div class="ms-dot"></div></div>
+      <div class="ms-card">
+        <h3>Water Restoration Programs Launch</h3>
+        <p class="base">Intel pledges to restore 100% of freshwater used globally — the first semiconductor company to do so.</p>
+        <p class="extra">// Partnership with local watershed conservation groups funded restoration projects exceeding Intel's annual water draw. Model later adopted by 3 competitor companies.</p>
+        <span class="tag">#water</span>
+      </div>
+    </div>
+
+    <!-- 2015 -->
+    <div class="ms">
+      <div class="ms-img-wrap">
+        <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=560&auto=format&fit=crop&q=70" alt="Recycling and waste management facility" loading="lazy" />
+        <span class="ms-year-badge">2015</span>
+      </div>
+      <div class="ms-dot-row"><div class="ms-dot"></div></div>
+      <div class="ms-card">
+        <h3>Zero Waste to Landfill Achieved</h3>
+        <p class="base">All major Intel manufacturing sites reach zero-waste-to-landfill status worldwide.</p>
+        <p class="extra">// Over 75% of manufacturing byproducts recycled or converted to energy. Chemical waste recovery programs diverted 3,000+ tons annually from landfills.</p>
+        <span class="tag">#waste</span>
+      </div>
+    </div>
+
+    <!-- 2017 -->
+    <div class="ms">
+      <div class="ms-img-wrap">
+        <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=560&auto=format&fit=crop&q=70" alt="Wind turbines and renewable energy" loading="lazy" />
+        <span class="ms-year-badge">2017</span>
+      </div>
+      <div class="ms-dot-row"><div class="ms-dot"></div></div>
+      <div class="ms-card">
+        <h3>100% Renewable Electricity — U.S.</h3>
+        <p class="base">All U.S. Intel operations powered by 100% renewable electricity via direct purchases and RECs.</p>
+        <p class="extra">// Intel became one of the largest U.S. green power purchasers. Wind + solar sourcing equivalent to powering 200,000 homes — validated by EPA Green Power Partnership.</p>
+        <span class="tag">#energy</span>
+      </div>
+    </div>
+
+    <!-- 2020 -->
+    <div class="ms">
+      <div class="ms-img-wrap">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=560&auto=format&fit=crop&q=70" alt="Digital strategy and technology concept" loading="lazy" />
+        <span class="ms-year-badge">2020</span>
+      </div>
+      <div class="ms-dot-row"><div class="ms-dot"></div></div>
+      <div class="ms-card">
+        <h3>RISE Strategy Unveiled</h3>
+        <p class="base">Intel launches RISE (Responsible, Inclusive, Sustainable, Enabling) with bold 2030 targets.</p>
+        <p class="extra">// RISE quantified every target into measurable KPIs auditable by third parties — a departure from vague "commitments" to engineering-grade accountability.</p>
+        <span class="tag">#strategy</span>
+      </div>
+    </div>
+
+    <!-- 2022 -->
+    <div class="ms">
+      <div class="ms-img-wrap">
+        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=560&auto=format&fit=crop&q=70" alt="Sustainable factory and clean manufacturing" loading="lazy" />
+        <span class="ms-year-badge">2022</span>
+      </div>
+      <div class="ms-dot-row"><div class="ms-dot"></div></div>
+      <div class="ms-card">
+        <h3>Net-Zero GHG by 2040 Pledged</h3>
+        <p class="base">Intel commits to net-zero greenhouse gas emissions across its entire global value chain by 2040.</p>
+        <p class="extra">// Scope 1, 2, and 3 emissions all addressed. Supply chain partners required to meet Intel environmental standards — multiplying climate impact beyond Intel's own walls.</p>
+        <span class="tag">#climate</span>
+      </div>
+    </div>
+
+    <!-- 2030 -->
+    <div class="ms">
+      <div class="ms-img-wrap">
+        <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=560&auto=format&fit=crop&q=70" alt="Earth from space representing global sustainability" loading="lazy" />
+        <span class="ms-year-badge">2030</span>
+      </div>
+      <div class="ms-dot-row"><div class="ms-dot"></div></div>
+      <div class="ms-card">
+        <h3>RISE 2030 Horizon Goals</h3>
+        <p class="base">Target: net positive water, 100% global renewable electricity, and zero manufacturing waste to landfill.</p>
+        <p class="extra">// The 2030 targets represent the culmination of a 22-year sustainability transformation — from incremental progress to full-spectrum environmental leadership.</p>
+        <span class="tag">#future</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── STATS ── -->
+<section class="stats-strip">
+  <div class="stat">
+    <div class="stat-num">100%</div>
+    <div class="stat-lbl">Renewable electricity in U.S. operations</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">75B+</div>
+    <div class="stat-lbl">Gallons of water restored since 2008</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">2040</div>
+    <div class="stat-lbl">Target year for net-zero emissions</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">4B+</div>
+    <div class="stat-lbl">kWh conserved through efficiency</div>
+  </div>
+</section>
+
+<!-- ── CODE CALLOUT ── -->
+<div class="code-callout">
+  <div class="code-block">
+    <div class="code-header">
+      <div class="dot-red"></div>
+      <div class="dot-yel"></div>
+      <div class="dot-grn"></div>
+      <span class="file-name">sustainability_goals.js</span>
+    </div>
+    <span class="c-comment">// Intel RISE Strategy — 2030 Targets</span><br>
+    <span class="c-kw">const</span> <span class="c-key">intelRISE</span> = {<br>
+    &nbsp;&nbsp;<span class="c-key">water</span>: <span class="c-fn">netPositive</span>(<span class="c-str">'100%'</span>),<br>
+    &nbsp;&nbsp;<span class="c-key">electricity</span>: <span class="c-fn">renewable</span>(<span class="c-str">'global'</span>),<br>
+    &nbsp;&nbsp;<span class="c-key">waste</span>: <span class="c-fn">zeroLandfill</span>(<span class="c-str">'all sites'</span>),<br>
+    &nbsp;&nbsp;<span class="c-key">emissions</span>: <span class="c-fn">netZero</span>(<span class="c-num">2040</span>),<br>
+    &nbsp;&nbsp;<span class="c-key">chemicals</span>: <span class="c-fn">reduce</span>(<span class="c-num">10</span>, <span class="c-str">'%'</span>),<br>
+    };<br><br>
+    <span class="c-comment">// Status: mission in progress</span><br>
+    <span class="c-fn">commit</span>(intelRISE).<span class="c-fn">then</span>(() =&gt; <span class="c-str">'planet.ok = true'</span>);
+  </div>
+</div>
+
+<!-- ── 2026 INSIGHTS ── -->
+<div class="about-divider"></div>
+
+<section class="insights-section">
+  <div class="insights-header">
+    <span class="eyebrow">// intel_status_2026.log()</span>
+    <h2>Where Intel Stands in 2026</h2>
+    <p class="sub">A real-time snapshot of Intel's sustainability progress — based on their 2024–2025 Corporate Responsibility Report and Q2 2026 disclosures.</p>
+  </div>
+
+  <div class="insights-grid">
+
+    <div class="insight-card green">
+      <span class="insight-icon">⚡</span>
+      <span class="i-label">// energy</span>
+      <h3>98% Renewable Electricity Globally</h3>
+      <p>Intel reached 98% renewable electricity across global operations in 2024, up from 80% the prior year — inching toward the 100% RISE 2030 target ahead of schedule.</p>
+      <div class="i-stat">98%</div>
+    </div>
+
+    <div class="insight-card blue">
+      <span class="insight-icon">💧</span>
+      <span class="i-label">// water</span>
+      <h3>Net-Positive Water in the U.S.</h3>
+      <p>In 2024, Intel conserved and restored approximately 13.4 billion gallons of water — maintaining net-positive water status in the United States and several other countries.</p>
+      <div class="i-stat">13.4B gal</div>
+    </div>
+
+    <div class="insight-card cyan">
+      <span class="insight-icon">🏭</span>
+      <span class="i-label">// emissions</span>
+      <h3>29,000 Metric Tons CO₂e Reduced</h3>
+      <p>Intel reduced combined Scope 1 and 2 emissions by 29,000 metric tons of CO₂e in 2024. All global manufacturing sites maintain ISO 14001 and ISO 50001 certifications.</p>
+      <div class="i-stat">−29K MT</div>
+    </div>
+
+    <div class="insight-card green">
+      <span class="insight-icon">♻️</span>
+      <span class="i-label">// waste</span>
+      <h3>Zero Waste Programs Active Globally</h3>
+      <p>Intel continues zero-waste-to-landfill operations at all major fabs, with chemical waste recovery and byproduct recycling programs diverting thousands of tons annually.</p>
+      <div class="i-stat">All sites</div>
+    </div>
+
+    <div class="insight-card amber">
+      <span class="insight-icon">📋</span>
+      <span class="i-label">// governance</span>
+      <h3>Executive Pay Tied to ESG Metrics</h3>
+      <p>In 2024, Intel directly linked executive and employee compensation to measurable sustainability KPIs — including renewable electricity use, GHG reductions, water conservation, and waste diversion.</p>
+      <div class="i-stat">CEO-level</div>
+    </div>
+
+    <div class="insight-card blue">
+      <span class="insight-icon">🤖</span>
+      <span class="i-label">// AI + sustainability</span>
+      <h3>AI-Powered Efficiency Gains</h3>
+      <p>Under new CEO Lip-Bu Tan, Intel's 2024–2025 CSR Report highlights AI as a key enabler of sustainable manufacturing — using machine learning to optimize fab energy use and reduce chemical waste in real time.</p>
+      <div class="i-stat">2025 CSR</div>
+    </div>
+
+  </div>
+
+  <p class="insights-note">
+    Sources: <a href="https://www.intel.com/content/www/us/en/corporate-responsibility/corporate-responsibility.html" target="_blank">Intel Corporate Responsibility Report 2024–25</a> &nbsp;·&nbsp;
+    <a href="https://www.environmentenergyleader.com/stories/how-intel-turned-environmental-constraints-into-a-planning-advantage,111480" target="_blank">Environment+Energy Leader, Jan 2026</a>
+  </p>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p>// <span>Intel Sustainability Timeline</span> — Frontend Design Project &copy; 2025 — built with purpose</p>
+</footer>
+
+<!-- ── MATRIX RAIN SCRIPT ── -->
+<script>
+(function() {
+  const canvas = document.getElementById('matrix-canvas');
+  const ctx = canvas.getContext('2d');
+
+  const snippets = [
+    'function reduce(ghg)',
+    'water.restore()',
+    'const zero = true',
+    'net_zero(2040)',
+    'renewable.energy',
+    'if(earth.ok)',
+    'emit(0)',
+    'green++',
+    '0068B5',
+    'RISE.strategy',
+    '100%',
+    'src=solar',
+    'H2O.save()',
+    'landfill=0',
+    'kWh.save()',
+    '< /pollution >',
+    'return planet',
+  ];
+
+  let cols, drops, W, H;
+
+  function resize() {
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+    cols = Math.floor(W / 18);
+    drops = Array.from({length: cols}, () => Math.random() * -80);
+  }
+
+  resize();
+  window.addEventListener('resize', resize);
+
+  function draw() {
+    ctx.fillStyle = 'rgba(0,9,26,0.055)';
+    ctx.fillRect(0, 0, W, H);
+
+    ctx.font = '13px "Fira Code", monospace';
+
+    for (let i = 0; i < drops.length; i++) {
+      const text = Math.random() > 0.92
+        ? snippets[Math.floor(Math.random() * snippets.length)]
+        : String.fromCharCode(0x30A0 + Math.floor(Math.random() * 96));
+
+      const alpha = 0.15 + Math.random() * 0.4;
+      const r = Math.random();
+      if (r > 0.85) ctx.fillStyle = `rgba(0,194,224,${alpha})`;
+      else if (r > 0.6) ctx.fillStyle = `rgba(0,104,181,${alpha})`;
+      else ctx.fillStyle = `rgba(255,255,255,${alpha * 0.5})`;
+
+      ctx.fillText(text, i * 18, drops[i] * 18);
+
+      if (drops[i] * 18 > H && Math.random() > 0.975) drops[i] = 0;
+      drops[i] += 0.5;
+    }
+  }
+
+  setInterval(draw, 50);
+})();
+</script>
+
+</body>
+</html>
